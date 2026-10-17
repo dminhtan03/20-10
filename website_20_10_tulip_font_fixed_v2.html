@@ -171,7 +171,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
       .puzzle-piece {
-        background-image: url("Screenshot\ 2026-10-17\ 165554.png");
+        background-image: url("/img/Screenshot\ 2026-10-17\ 165554.png");
         background-size: 288px 288px;
         width: 96px;
         height: 96px;
@@ -759,7 +759,7 @@
         </button>
       </header>
       <audio id="bgMusic" loop>
-        <source src="chờ chút....mp3" type="audio/mpeg" />
+        <source src="/audio/chờ chút....mp3" type="audio/mpeg" />
       </audio>
       <main>
         <!-- BƯỚC 1: TRÒ CHƠI GHÉP HÌNH ĐẦU TRANG -->
@@ -1184,7 +1184,12 @@
       initPuzzle();
 
       /* --- LOGIC SLIDE ALBUM ẢNH & MODAL --- */
-      const memoryPhotos = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.png"];
+      const memoryPhotos = [
+        "/img/img1.jpg",
+        "/img/img2.jpg",
+        "/img/img3.jpg",
+        "/img/img4.png",
+      ];
       let currentPhotoIndex = 0;
       const sliderImage = document.getElementById("sliderImage");
 
